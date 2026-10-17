@@ -102,7 +102,7 @@ class Test(unittest.TestCase):
         df = np.array([4.0, 6.0, 6.0, 6.0])
         before = [value.copy() for value in (coefficients, stdev, sigma, df)]
         fit = MArrayLM(coefficients, stdev, sigma, df, np.eye(2))
-        result = eBayes(fit, proportion=0.5)
+        result = eBayes(fit, proportion=0.5, legacy=True)
 
         pd.testing.assert_frame_equal(coefficients, before[0])
         pd.testing.assert_frame_equal(stdev, before[1])
