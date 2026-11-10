@@ -6,12 +6,7 @@
 
 <h1 align="center">
 
-[![pypi version](https://img.shields.io/pypi/v/inmoose)](https://pypi.org/project/inmoose)
-[![PyPI Downloads](https://static.pepy.tech/badge/inmoose)](https://pepy.tech/project/inmoose)
-[![PyPI Downloads](https://static.pepy.tech/badge/inmoose/month)](https://pepy.tech/projects/inmoose)
-[![coverage](https://img.shields.io/coverallsCoverage/github/epigenelabs/inmoose.svg)](https://coveralls.io/github/epigenelabs/inmoose)
-[![Documentation Status](https://readthedocs.org/projects/inmoose/badge/?version=latest)](https://inmoose.readthedocs.io/en/latest/?badge=latest)
-[![license](https://img.shields.io/pypi/l/inmoose)](LICENSE)
+[![license](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)](LICENSE)
 
 </h1>
 
@@ -24,19 +19,27 @@ InMoose
 InMoose is the **In**tegrated **M**ulti **O**mic **O**pen **S**ource **E**nvironment.
 It is a collection of tools for the analysis of omic data.
 
-InMoose is developed and maintained by <img src="docs/source/epigenelogo.png" width="20"> [Epigene Labs](https://www.epigenelabs.com/).
+This is a [fork of InMoose](https://github.com/epigenelabs/inmoose) maintained for
+[ProteoFlux](https://github.com/Afanc/ProteoFlux). It carries limma fixes needed
+by ProteoFlux. The original InMoose project was developed and is maintained by
+<img src="docs/source/epigenelogo.png" width="20"> [Epigene Labs](https://www.epigenelabs.com/).
+The original authors and GPL-3.0-or-later license are retained.
 
 # Installation
 
-You can install InMoose directly with:
+Install this fork with Python 3.11 or newer:
 
 ```
-pip install inmoose
+python -m pip install inmoose-proteoflux
 ```
+
+The distribution name is `inmoose-proteoflux`; Python imports remain `inmoose`.
+Do not install it alongside the upstream `inmoose` distribution because both
+provide the same Python modules.
 
 # Documentation
 
-Documentation is hosted on [readthedocs.org](https://inmoose.readthedocs.io/en/latest/).
+Upstream documentation is hosted on [readthedocs.org](https://inmoose.readthedocs.io/en/latest/).
 
 # Citing
 

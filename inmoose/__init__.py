@@ -1,6 +1,6 @@
 import importlib.metadata
 
-__version__ = importlib.metadata.version(__package__)
+__version__ = importlib.metadata.version("inmoose-proteoflux")
 
 from . import edgepy as edgepy
 from . import pycombat as pycombat

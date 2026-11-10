@@ -77,8 +77,8 @@ jobs:
 
       - uses: actions/upload-artifact@v5
         with:
-          name: inmoose_sdist
-          path: dist/inmoose-*.tar.gz
+          name: inmoose_proteoflux_sdist
+          path: dist/inmoose_proteoflux-*.tar.gz
 
   upload_pypi:
     needs: [build_sdist, tests_and_coverage]
@@ -91,7 +91,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v6
         with:
-          name: inmoose_sdist
+          name: inmoose_proteoflux_sdist
           path: dist
 
       - uses: pypa/gh-action-pypi-publish@v1.13.0
